@@ -1,4 +1,4 @@
-## Step 1
+## First Angular App
 
 First of all we need to install angular-cli, the command line tool for scaffolding Angular applications.
 
