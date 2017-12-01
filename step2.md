@@ -104,13 +104,14 @@ export class CoffeeMenuComponent implements OnInit {
 In our template we'll be using angular material, it needs to be installed using the command specified below:
 
 ```
-npm install --save @angular/material @angular/cdk --save
+npm install @angular/material@latest --save
+npm install @angular/cdk@latest --save
 ```
 
 coffee-menu.component.html
 
 ```
-<div>
+<div class="coffee-menu">
   <mat-grid-list cols="2" rowHeight="2:1">
     <mat-grid-tile *ngFor="let coffee of coffees">
       <mat-grid-tile-header>
@@ -165,12 +166,10 @@ export class AppModule { }
 Finally let's modify the file app.component.html to reference the coffee-menu component:
 
 ```
-<div class="coffee-menu">
-  <coffee-menu></coffee-menu>
-</div>
+<coffee-menu></coffee-menu>
 ```
 
-And the app.component.scss to specify the background colour:
+And the coffee-menu.component.scss to specify the background colour:
 
 ```
 .coffee-menu {
