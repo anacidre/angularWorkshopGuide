@@ -9,32 +9,35 @@ For now, the price will be a static value, but in the next section will see how 
 This time the component will be generated using Angular CLI. So let's go to the Terminal and at coffee-order-app type:
 
 ```
-ng generate component footer
+ng generate component order
 ```
 
-This will create the necessary files for the component in the footer folder and also import this component into app.module.ts.
+This will create the necessary files for the component in the order folder and also import this component into app.module.ts.
 
-If we add the component in the app.component.html page we can see our footer in the page:
+If we add the component at the end of the the coffee-menu.component.html page we can see our footer in the page:
 
 ```
-<coffee-menu></coffee-menu>
-<app-footer></app-footer>
+...
+</mat-grid-list>
+<a href="https://www.freepik.com/free-vector/coffee-types_803190.htm">Designed by Freepik</a>
+</div>
+<app-order></app-order>
 ```
 
 Now let's change the component a little bit so it reflects the information that we want to show to our users.
 
-First let's create an attribute that will contain the final price (footer.component.ts).
+First let's create an attribute that will contain the final price (order.component.ts).
 
 ```
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  selector: 'app-order',
+  templateUrl: './order.component.html',
+  styleUrls: ['./order.component.scss']
 })
-export class FooterComponent implements OnInit {
-  price: number = 12;
+export class OrderComponent implements OnInit {
+  totalOrder: number = 0;
 
   constructor() { }
 
@@ -44,15 +47,15 @@ export class FooterComponent implements OnInit {
 }
 ```
 
-We need to modify the html for our footer component:
+We need to modify the html for our order component:
 
 ```
 <div class="footer">
-  <h3>Price: {{price}}</h3>
+  <h3>Price: {{totalOrder}}</h3>
 </div>
 ```
 
-Add finally change the styles in the footer.component.scss:
+Add finally change the styles in the order.component.scss:
 ```
 .footer {
     background-color: #71dad1;

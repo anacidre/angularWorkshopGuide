@@ -26,7 +26,7 @@ This folder will contain the definition of the Coffee class:
 export class Coffee {
   name: string;
   image: string;
-  price: string;
+  price: number;
 }
 ```
 
@@ -76,22 +76,22 @@ export class CoffeeMenuComponent implements OnInit {
     {
       name:'Flat white',
       image: '/assets/images/flatWhite.png',
-      price:'1.50'
+      price:1.50
     },
     {
       name:'Capuccino',
       image: '/assets/images/capuccino.png',
-      price:'2.50'
+      price:2.50
     },
     {
       name:'CaramelMachiato',
       image: '/assets/images/caramelMachiato.png',
-      price:'3.00'
+      price:3.00
     },
     {
       name:'Expresso',
       image: '/assets/images/expresso.png',
-      price:'2.50'
+      price:2.50
     }
   ];
 
