@@ -30,12 +30,10 @@ export class Coffee {
 }
 ```
 
-At the menu page will be showing images representing the different coffee types, so let's create the folder where those images will be held:
+The menu page will have images which will represent the different types of coffee, so let's create the folder where we will put those images:
 
 ```
-cd coffee-order-app/src/
-mkdir assets
-cd assets
+cd coffee-order-app/src/assets
 mkdir images
 ```
 
@@ -74,24 +72,24 @@ export class CoffeeMenuComponent implements OnInit {
 
   coffees: Coffee[] = [
     {
-      name:'Flat white',
+      name: 'Flat white',
       image: '/assets/images/flatWhite.png',
-      price:1.50
+      price: 1.50
     },
     {
-      name:'Capuccino',
+      name: 'Capuccino',
       image: '/assets/images/capuccino.png',
-      price:2.50
+      price: 2.50
     },
     {
-      name:'CaramelMachiato',
+      name: 'CaramelMachiato',
       image: '/assets/images/caramelMachiato.png',
-      price:3.00
+      price: 3.00
     },
     {
-      name:'Expresso',
+      name: 'Expresso',
       image: '/assets/images/expresso.png',
-      price:2.50
+      price: 2.50
     }
   ];
 
