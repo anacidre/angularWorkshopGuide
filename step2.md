@@ -20,7 +20,7 @@ mkdir shared
 cd shared
 ```
 
-This folder will contain the definition of the Coffee class:
+This folder will contain the definition of the Coffee class. We create the file coffee-class.ts and add the class:
 
 ```
 export class Coffee {
