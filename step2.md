@@ -1,14 +1,15 @@
 ## Setting up our coffee menu - Our first component
 
-Now that we have set up our first Angular app, we'll start making changes to develop our Hipster Coffee web.
+Now that we have set up our first Angular app, we will start making changes to develop our Hipster Coffee web.
 
-We'll start developing our app, for now we'll be focus just in the menu that shows different types of coffee that can be ordered from the store. To do that we'll create a new component from scratch.
-At the end of this section we had built the skeleton for the section highlighted in blue below:
+We will start developing our app, for now we will focus just on the menu that shows the different types of coffee that can be ordered from the store. To do that we will create a new component from scratch.
+
+At the end of this section we will have built the skeleton for the section highlighted in blue below:
 
 ![picture](https://github.com/Vero333/angularWorkshopGuide/blob/master/guideResources/images/coffe-order-app.jpg)
 
 
-We can use angular CLI to help us to create an Angular component and we'll see that later but, for the first one, we are going to do it in the hard way ;)
+We can use angular CLI to help us to create an Angular component (which we will do that later) but as this is the first time you we are building a component we will do it from scratch to understand the structure properly.
 
 But before that let's create the Coffee class:
 
